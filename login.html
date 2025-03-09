@@ -3,41 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Login</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 600px; height: 300px;">
-            <div style="background-color: brown; border-radius: 10px 10px 0px 0px; text-align: center; width: 90vh; border-left: 5px solid; border-right: 5px solid;">
-                <h1 style="color: white;">Login</h1>
+    <div class="container">
+        <div class="form-content">
+            <div class="form-image-login">
+                <img src="assets/splash.jpg" alt="login-image">
             </div>
-            <div style="display: flex; justify-content: center; width: 90vh; background-color: lightcoral; border-radius: 0px 0px 10px 10px; border-left: 5px solid; border-right: 5px solid; border-bottom: 10px solid;">
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <img src="assets/login.jpg" alt="login-image" style="width: 350px; border-radius: 1;">
+            <form class="form-fill" action="/game-review.html" method="post">
+                <div class="form-header">
+                    <h1>Login</h1>
                 </div>
-                <div style="display: flex; justify-content: center; align-items: center; width: 350px;">
-                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: white; width: 300px; height: 300px; border-bottom: 5px solid; border-radius: 10px; border-right: 5px solid; border-color: brown; ">
-                        <form action="" method="post">
-                            <div style="display: flex; flex-direction: column;">
-                                <div style="font-weight: bold;">
-                                    <label for="username">Username</label>
-                                </div>
-                                <input type="username" name="username" id="username" required style="margin-bottom: 10px; border-radius: 5px;">
-                                <div style="font-weight: bold;">
-                                    <label for="password">Password</label>
-                                </div>
-                                <input type="password" name="password" id="password" required style="border-radius: 5px; margin-bottom: 5px;">
-                                <div style="display: flex; justify-content: right; margin-bottom: 20px;">
-                                    <a href="/styled-register.html">Don't have an Account?</a>
-                                </div>
-                            </div>
-                            <div style="display: flex; justify-content: right; margin-top: 10px;">
-                                <button type="submit" style="width: 100%; height: 35px; border-radius: 40px; font-weight: 900;">Login</button>
-                            </div>
-                        </form>
+                <div class="form-card">
+                    <div class="form-input">
+                        <label for="username">Username :</label>
+                        <input type="username" name="username" id="username" placeholder="Enter your Username" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="password">Password : </label>
+                        <input type="password" name="password" id="password" placeholder="Enter your Password" required>
+                        <a href="/register.html">Forgot Password?</a>
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" formaction="/game-review.html">Login</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>
