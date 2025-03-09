@@ -37,6 +37,11 @@ h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #root, #__next {
     isolation: isolate;
 }
@@ -51,21 +56,50 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    flex-direction: column;
     height: 100vh;
-    /* background: url('assets/splash.jpg'); */
-    /* background-repeat: no-repeat; */
 }
 
-.content-container {
+.home-content {
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    gap: 5rem;
+    padding-top: 3rem;
+    gap: 1rem;
+}
+
+.home-login button {
+    background-color: #369aff;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home-login:hover button {
+    background-color: #1e6fd4;
+}
+
+.home-register button {
+    background-color: #369aff;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home-register:hover button {
+    background-color: #1e6fd4;
 }
 
 .form-image-login {
@@ -86,47 +120,6 @@ h1, h2, h3, h4, h5, h6 {
 .form-image-register img {
     width: 100%;
     border-radius: 10px 0px 0px 10px;
-}
-
-.card {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    width: 250px;
-    box-shadow: 0px 0px 10px 0px black;
-    border-radius: 10px;
-}
-
-.card-content {
-    margin: 2rem;
-}
-
-.card-content img {
-    width: fit-content;
-    border-radius: 10px;
-}
-
-.card-title {
-    font-size: medium;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-}
-
-.card-button {
-    margin-top: 1rem;
-}
-
-.card-button button {
-    background-color: grey;
-    color: white;
-    border-radius: 8px;
-    width: 100%;
-    height: 50px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .form-content {
@@ -207,4 +200,8 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     font-weight: bold;
     cursor: pointer;
+}
+
+.form-button button:hover {
+    background-color: black;
 }
